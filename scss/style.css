@@ -222,7 +222,7 @@ header {
     background-image: url(../images/desktop/image-hero.jpg);
     background-size: auto;
     height: 650px;
-    margin-bottom: 15rem;
+    margin-bottom: 17rem;
     padding-left: 12rem;
     padding-right: 12rem;
     display: -webkit-box;
@@ -300,7 +300,7 @@ header {
   header {
     width: 1440px;
     margin: 0 auto;
-    margin-bottom: 7rem;
+    margin-bottom: 17rem;
   }
 }
 
