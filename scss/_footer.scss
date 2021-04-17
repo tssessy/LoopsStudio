@@ -1,0 +1,80 @@
+.f {
+  background: $black;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  gap: 4rem;
+  padding: 7rem 0;
+
+  &-menu {
+    &-item {
+      padding: 1.5rem 0;
+      position: relative;
+      text-align: center;
+
+      &:hover::after {
+        content: "";
+        display: block;
+        position: absolute; /* position this at the bottom */
+        bottom: 0;
+        left: 25%; /* left and right determine length of line, the longer you want it, the closer to 0 these values should be */
+        right: 25%;
+        height: 2px;
+        background: $white; /* match the font color */
+      }
+    } //? end item
+    &-link {
+      color: $white;
+    }
+  } //? end menu
+
+  &-social {
+    display: flex;
+    // padding: 0.8rem;
+
+    a {
+      padding-bottom: 0.5rem;
+      height: 3rem;
+    }
+    a:hover {
+      border-bottom: 2px solid $white;
+    }
+    a + a {
+      margin-left: 1.5rem;
+    }
+  } //? end social
+  p {
+    color: $dark-gray;
+  }
+}
+
+@include media-lg {
+  .f {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 4rem 16.5rem;
+
+    img {
+      justify-self: flex-start;
+    }
+    &-menu {
+      display: flex;
+      grid-column: 1/2;
+      grid-row: 2/3;
+      justify-self: flex-start;
+
+      &-item + &-item {
+        margin-left: 3rem;
+      }
+    }
+
+    &-social {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      justify-self: flex-end;
+    }
+    p {
+      justify-self: flex-end;
+    }
+  } //? end f
+}

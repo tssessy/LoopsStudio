@@ -1,0 +1,32 @@
+//?Colors
+$white: #ffffff;
+$black: #000000;
+$dark-gray: #8c8c8c;
+$very-dark-gray: #696969;
+
+$font-f-Alata: "Alata", sans-serif;
+$font-f-Josefin: "Josefin Sans", sans-serif;
+
+// ! Mixin Transition Animation
+@mixin transition-ease {
+  transition: all 0.5s ease-in-out;
+}
+
+@mixin media-md {
+  //md=medium
+  @media screen and (min-width: 705px) {
+    @content;
+  }
+}
+@mixin media-lg {
+  //lg=large
+  @media screen and (min-width: 950px) {
+    @content;
+  }
+}
+@mixin media-xlg {
+  //lg=large
+  @media screen and (min-width: 1440px) {
+    @content;
+  }
+}

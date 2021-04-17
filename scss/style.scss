@@ -1,0 +1,20 @@
+@import "./variables";
+@import "./resets";
+@import "./hero";
+@import "./vr-section";
+@import "./creation";
+@import "./creationpc";
+@import "./footer";
+
+h2 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-family: $font-f-Josefin;
+}
+@include media-xlg {
+  .wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
