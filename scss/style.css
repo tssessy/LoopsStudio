@@ -258,6 +258,8 @@ header {
     padding-top: 5.3rem;
     padding-bottom: 1rem;
     margin-left: 2rem;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
   header .nav-menu-item:hover::after {
     content: "";
@@ -523,6 +525,8 @@ header {
   color: #000000;
   padding: 1rem 3.5rem;
   border: 1px solid #000000;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .creation-pc-btn:hover {
@@ -581,6 +585,8 @@ header {
   padding: 1.5rem 0;
   position: relative;
   text-align: center;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .f-menu-item:hover::after {
@@ -610,6 +616,8 @@ header {
 .f-social a {
   padding-bottom: 0.5rem;
   height: 3rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .f-social a:hover {
