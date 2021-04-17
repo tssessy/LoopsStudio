@@ -223,6 +223,8 @@ header {
     background-size: auto;
     height: 650px;
     margin-bottom: 7rem;
+    padding-left: 12rem;
+    padding-right: 12rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
