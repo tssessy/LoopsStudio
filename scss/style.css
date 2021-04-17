@@ -407,25 +407,14 @@ header {
   color: black;
 }
 
-.creation-gallery .container a {
+.creation-gallery .container img {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
-.creation-gallery .container a::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #000000;
-  opacity: 0.4;
-  z-index: 0;
-}
-
-.creation-gallery .container a:hover {
+.creation-gallery .container img:hover {
   opacity: 0.5;
+  filter: alpha(opacity=50);
 }
 
 .creation-gallery .container h4 {
@@ -503,20 +492,14 @@ header {
   color: black;
 }
 
-.creation-pc-gallery .container a::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #000000;
-  opacity: 0.4;
-  z-index: 0;
+.creation-pc-gallery .container a {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .creation-pc-gallery .container a:hover {
   opacity: 0.5;
+  filter: alpha(opacity=50);
 }
 
 .creation-pc-gallery .container h4 {
