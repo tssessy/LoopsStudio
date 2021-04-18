@@ -603,8 +603,8 @@ header {
   padding: 1.5rem 0;
   position: relative;
   text-align: center;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .f-menu-item:hover::after {
@@ -634,8 +634,8 @@ header {
 .f-social a {
   padding-bottom: 0.5rem;
   height: 3rem;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .f-social a:hover {
