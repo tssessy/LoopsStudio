@@ -53,8 +53,8 @@
 @include media-lg {
   .f {
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    padding: 4rem 16.5rem;
+    gap: 1rem;
+    padding: 3.5rem 16.5rem;
 
     img {
       justify-self: flex-start;

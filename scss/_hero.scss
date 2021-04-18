@@ -12,7 +12,7 @@ header {
   position: relative;
   width: fit-content;
   height: min-content;
-  padding: 5rem 1.5rem 1.5rem 3rem;
+  padding: 6rem 1.5rem 1.5rem 3rem;
   z-index: 4;
 } //?end logo
 
@@ -20,7 +20,7 @@ header {
   position: absolute;
   z-index: 4;
   right: 3rem;
-  top: 5.5rem;
+  top: 6.5rem;
   height: 2.1rem;
   width: 2.8rem;
   cursor: pointer;
@@ -117,6 +117,7 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 2;
 
   h3 {
     font-family: $font-f-Josefin;
@@ -126,6 +127,16 @@ header {
     color: $white;
     padding: 2rem;
   }
+} //? end float
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  // border: 1px solid green;
 }
 
 @include media-md {
@@ -143,7 +154,7 @@ header {
     background-image: url(../images/desktop/image-hero.jpg);
     background-size: auto;
     height: 650px;
-    margin-bottom: 17rem;
+    margin-bottom: 16rem;
     padding-left: 12rem;
     padding-right: 12rem;
     display: flex;
@@ -156,6 +167,7 @@ header {
       width: fit-content;
       height: min-content;
       padding-right: 3rem;
+      z-index: 2;
 
       &-menu {
         display: block;
@@ -167,7 +179,7 @@ header {
         &-item {
           display: inline-block;
           position: relative;
-          padding-top: 5.3rem;
+          padding-top: 6.3rem;
           padding-bottom: 1rem;
           margin-left: 2rem;
           transition: all 0.5s ease-in-out;
@@ -206,6 +218,9 @@ header {
       font-size: 6.8rem;
       padding: 2.5rem 3.5rem 1.5rem 2.5rem;
     }
+  }
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
   }
 }
 @include media-xlg {

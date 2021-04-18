@@ -65,7 +65,7 @@ header {
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
-  padding: 5rem 1.5rem 1.5rem 3rem;
+  padding: 6rem 1.5rem 1.5rem 3rem;
   z-index: 4;
 }
 
@@ -73,7 +73,7 @@ header {
   position: absolute;
   z-index: 4;
   right: 3rem;
-  top: 5.5rem;
+  top: 6.5rem;
   height: 2.1rem;
   width: 2.8rem;
   cursor: pointer;
@@ -194,6 +194,7 @@ header {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  z-index: 2;
 }
 
 .floating-div h3 {
@@ -203,6 +204,15 @@ header {
   text-transform: uppercase;
   color: #ffffff;
   padding: 2rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 @media screen and (min-width: 705px) {
@@ -222,7 +232,7 @@ header {
     background-image: url(../images/desktop/image-hero.jpg);
     background-size: auto;
     height: 650px;
-    margin-bottom: 17rem;
+    margin-bottom: 16rem;
     padding-left: 12rem;
     padding-right: 12rem;
     display: -webkit-box;
@@ -243,6 +253,7 @@ header {
     height: -moz-min-content;
     height: min-content;
     padding-right: 3rem;
+    z-index: 2;
   }
   header .nav-menu {
     display: block;
@@ -255,7 +266,7 @@ header {
   header .nav-menu-item {
     display: inline-block;
     position: relative;
-    padding-top: 5.3rem;
+    padding-top: 6.3rem;
     padding-bottom: 1rem;
     margin-left: 2rem;
     -webkit-transition: all 0.5s ease-in-out;
@@ -293,6 +304,9 @@ header {
   .floating-div h3 {
     font-size: 6.8rem;
     padding: 2.5rem 3.5rem 1.5rem 2.5rem;
+  }
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -412,6 +426,8 @@ header {
 .creation-gallery .container img {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  -webkit-filter: grayscale(30%);
+          filter: grayscale(30%);
 }
 
 .creation-gallery .container img:hover {
@@ -499,6 +515,8 @@ header {
 .creation-pc-gallery .container img {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  -webkit-filter: grayscale(30%);
+          filter: grayscale(30%);
 }
 
 .creation-pc-gallery .container img:hover {
@@ -636,8 +654,8 @@ header {
   .f {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    padding: 4rem 16.5rem;
+    gap: 1rem;
+    padding: 3.5rem 16.5rem;
   }
   .f img {
     justify-self: flex-start;
@@ -672,7 +690,7 @@ header {
 }
 
 h2 {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   text-transform: uppercase;
   font-weight: 300;
   font-family: "Josefin Sans", sans-serif;
